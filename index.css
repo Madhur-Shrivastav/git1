@@ -1,0 +1,33 @@
+.parent{
+    background-color: black;
+    height: 100vh;
+   
+}
+.child{
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+}
+.child:hover{
+    animation: movethechild 5s;
+}
+@keyframes movethechild {
+    25%{
+        transform: translate(400px,0px);
+    }
+    50%{
+        transform: translate(400px,400px);
+        border-radius: 25%;
+        background-color: red;
+    }
+    75%{
+        transform: translate(0px,400px);
+        border-radius: 25%;
+        background-color: yellow;
+    }
+    100%{
+        transform: translate(0px,0px);
+        background-color: blue;
+    }
+}
